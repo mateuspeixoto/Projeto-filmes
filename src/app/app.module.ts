@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { MovieComponent } from './movie/movie.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ServicesComponent } from './services/services.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,9 @@ import { ServicesComponent } from './services/services.component';
     ServicesComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, // Importa o módulo BrowserModule, que fornece recursos essenciais para a execução de aplicativos no navegador.
+    AppRoutingModule, // Importa o módulo AppRoutingModule, que contém as rotas de navegação do aplicativo.
+    FormsModule // Importa o módulo FormsModule, que fornece suporte para formulários no Angular.
   ],
   providers: [],
   bootstrap: [AppComponent]
