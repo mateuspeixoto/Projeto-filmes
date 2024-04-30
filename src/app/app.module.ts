@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieComponent } from './movie/movie.component';
 import { FeatureComponent } from './feature/feature.component';
-import { ServicesComponent } from './services/services.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     MovieComponent,
     FeatureComponent,
-    ServicesComponent
   ],
   imports: [
     BrowserModule, // Importa o módulo BrowserModule, que fornece recursos essenciais para a execução de aplicativos no navegador.
