@@ -1,0 +1,74 @@
+.body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.login-container {
+  display: flex;
+  justify-content: space-between; // Isso fará com que a imagem e o contêiner de texto fiquem nos extremos opostos do contêiner
+  align-items: center; // Isso fará com que a imagem e o contêiner de texto estejam alinhados verticalmente
+  width: 100%;
+  height: 100vh;
+  background-color: #ffdb58; // amarelo mostarda
+  padding: 0 20px; // Adiciona um pouco de espaço nas laterais para evitar que o conteúdo fique muito perto da borda da tela
+
+  .film {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .text-container {
+    // Novo contêiner para o logo e a descrição
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Alinha o logo e a descrição à direita
+
+    .logo {
+      font-size: 2em;
+      color: #333;
+      padding: 20px;
+    }
+
+    .desc {
+      font-size: 1em;
+      color: #666;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .login-form {
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+      padding: 17px;
+      background-color: #fff;
+      border-radius: 10px;
+      bottom: 30px;
+      right: 50px;
+      box-shadow: 5px 5px 20px #383838;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .form-group {
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+    .btn-container {
+      position: relative;
+      .btn {
+        margin-top: 30px;
+      }
+      .error-message {
+        color: red;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        padding: 0.75rem 1.25rem;
+        margin-top: 25px;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+}
